@@ -9,6 +9,7 @@ declare module 'vue/types/vue' {
     $fireFunc: firebase.functions.Functions
     $fireStorage: firebase.storage.Storage
     $fireAuth: firebase.auth.Auth
+    $fireAuthNoFunc: firebase.auth.Auth
     $fireMess: firebase.messaging.Messaging
   }
 }
