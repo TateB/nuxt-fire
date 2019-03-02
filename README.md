@@ -76,6 +76,7 @@ Firebase products supported by nuxt-fire so far:
 | Firebase Product  | Shortcut      |
 | ----------------- | ------------- |
 | Authentication    | \$fireAuth    |
+| Authentication (Not a function)    | \$fireAuthNoFunc    |
 | Realtime Database | \$fireDb      |
 | Firestore         | \$fireStore   |
 | Storage           | \$fireStorage |
