@@ -7,7 +7,7 @@ import firebase from 'firebase/app'
 <%= options.useOnly.includes('messaging') ? "import 'firebase/messaging'" : "" %>
 
 export default (ctx, inject) => {
-  
+
   const options = <%= serialize(options) %>
 
   // Don't include when Firebase is already initialized
@@ -38,6 +38,11 @@ export default (ctx, inject) => {
   if (options.useOnly.includes('auth')) {
     const fireAuth = firebase.auth()
     inject('fireAuth', fireAuth)
+  }
+
+  if (options.useOnly.includes('authNoFunc')) {
+    const fireAuthNoFunc = firebase.auth
+    inject('fireAuthNoFunc', fireAuthNoFunc)
   }
 
   // Firebase Messaging can only be initiated on client side
