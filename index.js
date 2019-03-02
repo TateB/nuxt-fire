@@ -48,7 +48,8 @@ export default function nuxtFire(moduleOptions) {
       'functions',
       'storage',
       'realtimeDb',
-      'messaging'
+      'messaging',
+      'authNoFunc'
     ]
   }
 
